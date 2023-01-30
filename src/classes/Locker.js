@@ -10,8 +10,7 @@ class Locker {
         let res = [...locked];
         // 30 elements by default
         for (let i = locked.length; i < 30; i++) {
-            console.log(locked.length);
-            res.push(new LockedItem(locked.length+1, this.#generateCode()));
+            res.push(new LockedItem({id:res.length+1, code:this.#generateCode()}));
         }
         return res;
     }

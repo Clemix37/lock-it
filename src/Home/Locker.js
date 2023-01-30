@@ -7,11 +7,10 @@ function Locker({locker, lockers, updateLockers}){
 
     return (
         <>
-            <div className="ligne">
-                <div className="colonne">Id : {locker.id}</div>
-                <div className="colonne">City : {locker.city}</div>
-                <div className="colonne"><Link className="link" to={"/locker/" + locker.id}>See</Link></div>
-                <span className="span-btn" onClick={handleDelete}>🗑️</span>
+            <div className="ligne ligne-locker">
+                <div className="colonne content-centered">{locker.city} ({locker.id})</div>
+                <div className="colonne content-centered"><Link className="link" to={"/locker/" + locker.id}>Items</Link></div>
+                <span className="colonne content-centered span-btn" onClick={handleDelete} title="Supprimer">🗑️</span>
             </div>
         </>
     );

@@ -18,13 +18,12 @@ export default function AddLocker({lockers, updateLockers}){
 
     return (
         <div className="ligne">
-            <div className="colonne">
+            <div className="colonne liste-locker">
                 <div className="ligne">
-                    <label>City : </label>
-                    <input type="text" name="city" value={city} placeholder="City: " onChange={onCityChange} />
+                    <input type="text" name="city" value={city} placeholder="City: " onChange={onCityChange} autoComplete="off" />
                 </div>
                 <div className="ligne">
-                    <button onClick={handleAddLocker}>Add ➕</button>
+                    <button className="span-btn btn-add" onClick={handleAddLocker}>Add ➕</button>
                 </div>
             </div>
         </div>

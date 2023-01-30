@@ -31,9 +31,34 @@ input, textarea {
 
 .span-btn {
   cursor: pointer;
+  font-size: 20px;
 }
 
 .link {
   color:rgb(18, 210, 240);
   text-decoration: none;
+}
+
+.ligne-locked-item {
+  margin-top:10px;
+}
+.colonne-number {width:25% !important;}
+
+.ligne-locker {
+  background-color:#3b3b40;
+  padding:5px 0px;
+  border-radius:8px;
+  height: 30px;
+}
+
+.liste-locker {
+  padding:10px;
+}
+
+.btn-add {
+  width: 100px;
+  border-radius: 8px;
+  border: none;
+  background-color: #403f3f;
+  color: white;
 }
