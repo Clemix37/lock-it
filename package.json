@@ -1,7 +1,7 @@
 {
   "name": "lock-it",
   "version": "0.1.0",
-  "homepage": "/lock-it/",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
