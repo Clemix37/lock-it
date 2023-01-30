@@ -1,0 +1,39 @@
+.app, body {
+  margin:0;
+  background-color: #121212;
+  color:#C8C8C8;
+}
+
+input::placeholder{
+  color:#B5B5B5;
+}
+
+input, textarea {
+  background-color: #222222;
+  color:white;
+  width:80%;
+  border-radius: 8px;
+  height:30px;
+  border:1px solid black;
+  padding:5px;
+  font-size: 20px;
+}
+
+.btn{
+  border-radius: 8px;
+  border: 1px solid gray;
+  padding:5px;
+  cursor: pointer;
+}
+.btn.is-gray {
+  background-color: #828282;
+}
+
+.span-btn {
+  cursor: pointer;
+}
+
+.link {
+  color:rgb(18, 210, 240);
+  text-decoration: none;
+}
