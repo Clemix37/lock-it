@@ -78,7 +78,7 @@ function LockedItem({lockedItem,lockers,locker,updateLockers}){
 
     return (
         <div className="ligne ligne-locked-item">
-            <div className="colonne colonne-number">
+            <div className="colonne colonne-number content-centered">
                 N°{lockedItem.id}
             </div>
             {
@@ -93,11 +93,11 @@ function LockedItem({lockedItem,lockers,locker,updateLockers}){
                 ) : (<></>)
             }
             {
-                lockedItem.locked && lockedItem.item !== "" ? (
+                lockedItem.locked && lockedItem.item !== "" && !lockedItem.askCode ? (
                     <div className="colonne">
                         <span className="span-btn" onClick={openLockedItem}>🔒</span>
                     </div>  
-                ) : lockedItem.item !== "" ? (
+                ) : lockedItem.item !== "" && !lockedItem.askCode ? (
                     <div className="colonne">
                         <span>CONTENT: {lockedItem.item}</span>
                     </div>  

@@ -8,15 +8,14 @@
 }
 
 .nav-item:hover {
-    background-color:gray;
     cursor: pointer;
 }
 
 .nav-item a {
-    color:aliceblue;
+    color:var(--liens);
     text-decoration: none;
 }
 
 .nav-items {
-    background-color: rgb(43, 42, 42);
+    background-color: var(--primaire);
 }

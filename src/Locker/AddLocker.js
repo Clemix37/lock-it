@@ -12,7 +12,7 @@ export default function AddLocker({lockers, updateLockers}){
 
     const handleAddLocker = () => {
         if(city.trim().length <= 0) return;
-        updateLockers([...lockers, new Locker({id:lockers.length+1,city})]);
+        updateLockers([...lockers, new Locker({city})]);
         navigate("/");
     };
 

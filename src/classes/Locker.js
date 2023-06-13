@@ -1,8 +1,9 @@
 import LockedItem from "./LockedItem";
+import {v4} from 'uuid';
 
 class Locker {
     constructor({id, city, lockedItems = []}){
-        this.id = id;
+        this.id = id ?? v4();
         this.city = city;
         this.lockedItems = this.#createLockedItems(lockedItems);
     }
@@ -10,7 +11,7 @@ class Locker {
         let res = [...locked];
         // 30 elements by default
         for (let i = locked.length; i < 30; i++) {
-            res.push(new LockedItem({id:res.length+1, code:this.#generateCode()}));
+            res.push(new LockedItem({code:this.#generateCode()}));
         }
         return res;
     }

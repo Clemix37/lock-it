@@ -1,7 +1,15 @@
+:root {
+  --principale: #19180A;
+  --primaire: #A42CD6;
+  --secondaire: #502274;
+  --texte: #86A5D9;
+  --liens: #26F0F1;
+}
+
 .app, body {
   margin:0;
-  background-color: #121212;
-  color:#C8C8C8;
+  background-color: var(--principale);
+  color:var(--texte);
 }
 
 input::placeholder{
@@ -9,12 +17,12 @@ input::placeholder{
 }
 
 input, textarea {
-  background-color: #222222;
+  background-color: var(--principale);
   color:white;
   width:80%;
   border-radius: 8px;
   height:30px;
-  border:1px solid black;
+  border:1px solid gray;
   padding:5px;
   font-size: 20px;
 }
@@ -35,7 +43,7 @@ input, textarea {
 }
 
 .link {
-  color:rgb(18, 210, 240);
+  color:var(--liens);
   text-decoration: none;
 }
 
@@ -45,7 +53,7 @@ input, textarea {
 .colonne-number {width:25% !important;}
 
 .ligne-locker {
-  background-color:#3b3b40;
+  background-color:var(--secondaire);
   padding:5px 0px;
   border-radius:8px;
   height: 30px;

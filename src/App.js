@@ -13,7 +13,7 @@ function App() {
         locker.lockedItems = locker.lockedItems.map((l)=>new LockedItem(l));
         return new Locker(locker);
       }) : 
-      []);
+    []);
 
   useEffect(()=>{
     localStorage.setItem('lockers', JSON.stringify(lockers));
